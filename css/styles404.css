@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'uf';
+    src: url('/components/fonts/UF1.ttf');
+}
+
+body,
+html {
+
+    background-color: white !important;
+}
+
+.wrapper {
+    
+    width: 100%;
+    height: 100%;
+    background: url('/components/images/404_error.png') no-repeat center;
+    background-size: contain;
+}
+
+.error {
+    color: red;
+    background-color: red;
+}
+
+.error-btn-back {
+    max-width: 220px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.error-btn-back-content {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgb(226, 226, 226) 0px 0px 15px 5px;
+    
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.error-btn-back-content:hover {
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'uf';
+    color: rgb(62, 62, 62);
+
+    /* max-width: 180px; */
+    
+}
+
+
+/* .error404-return-back-icon {
+    width: 220px;
+    height: 220px;
+    background: url('/components/images/blackhole.png') no-repeat;
+    background-size: contain;
+} */

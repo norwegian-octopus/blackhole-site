@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "legendary-cursor": "^1.0.2",
+    "three": "^0.144.0"
+  }
+}

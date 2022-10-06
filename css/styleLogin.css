@@ -1,0 +1,160 @@
+/******************************/
+/******** LOGIN VIEW **********/
+/******************************/
+body, html {
+    height: 100%;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.5);
+    
+    border: solid 1px #fdd082;
+    width: 300px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23vh;
+
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.login-errors {
+    background: rgb(189, 76, 76);
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.login-errors-content {
+    color: aliceblue;
+    font-size: 12px;
+    
+}
+
+/* .login-btn, .signup-btn {
+    
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
+
+.btn-wrapper {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-content::before, .signup-btn a::before {
+    
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    border: 2px solid transparent;
+    transition: 0.3s all ease-in-out;
+
+    border-top-color: #fdd082;
+    border-bottom-color: #fdd082;
+}
+
+.btn-content::after, .signup-btn a::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    border: 2px solid transparent;
+    transition: 0.3s all ease-in-out;
+
+    border-left-color: #fdd082;
+    border-right-color: #fdd082;
+}
+
+.btn-content:hover::before, .signup-btn a:hover::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.btn-content:hover::after, .signup-btn a:hover::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.login-wrapper {
+    position: relative;
+    width: 70%;
+}
+
+.login-email, .login-password, .login-input {
+    width: 100%;
+}
+
+.login-email-field {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.login-password-field {
+    border-radius: 0px 0px 8px 8px;
+}
+
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fdd082;
+    font-family: 'namu';
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+.signup a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login-return-back-icon {
+    width: 120px;
+    height: 120px;
+    background: url('/components/images/blackhole.png') no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
